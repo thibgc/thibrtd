@@ -5,7 +5,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # See https://github.com/readthedocs/sphinx_rtd_theme
-https://github.com/readthedocs/sphinx_rtd_theme
+import sphinx_rtd_theme
 
 # -- Path setup --------------------------------------------------------------
 
