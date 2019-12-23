@@ -20,7 +20,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'ThibRTD'
+project = '''Thib's ReadTheDocs Test Project'''
 copyright = '2019, Thib Guicherd-Callin'
 author = 'Thib Guicherd-Callin'
 
@@ -60,3 +60,4 @@ html_static_path = ['_static']
 
 # See https://github.com/readthedocs/readthedocs.org/issues/2569
 master_doc = 'index'
+
