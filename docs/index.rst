@@ -12,7 +12,9 @@ Thib's ReadTheDocs Test Project
 
    inline
    lists
-   admonitions
+   asides
+   verbatim
+   links
 
 Indices and tables
 ==================

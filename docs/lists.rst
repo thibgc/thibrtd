@@ -2,6 +2,8 @@
 Lists
 =====
 
+.. contents:: :local:
+
 Bullet List
 ===========
 
@@ -101,6 +103,16 @@ Definition List
 
 Source:
 
+.. code-block:: rst
+
+   term 1
+       Definition 1.
+
+   term 2
+       Definition 2, paragraph 1.
+
+       Definition 2, paragraph 2.
+
 Result:
 
 term 1
@@ -111,15 +123,11 @@ term 2
 
     Definition 2, paragraph 2.
 
-term 3 : classifier
-    Definition 3.
-
-term 4 : classifier one : classifier two
-    Definition 4.
-
 Notes:
 
-Reference:
+*  Terms can also have *qualifiers* but the rendering does not seem to work with the version of Sphinx and Sphinx_rtd_theme we are using.
+
+References:
 
 *  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#definition-lists
 

@@ -1,13 +1,16 @@
-===========
+======
+Asides
+======
+
+.. contents:: :local:
+
 Admonitions
 ===========
-
-.. contents::
 
 Admonitions are side notes offset from the main body of text by a box. Examples include "Warning", "Note" and "Important". The specific admonition directives ``attention``, ``caution``, ``danger``, ``error``, ``hint``, ``important``, ``note``, ``tip``, and ``warning`` are implemented in terms of the generic ``admonition`` directive.
 
 Admonition
-==========
+----------
 
 Source:
 
@@ -28,7 +31,7 @@ Result:
    It can have multiple paragraphs.
 
 Attention
-=========
+---------
 
 Source:
 
@@ -49,7 +52,7 @@ Result:
    It can have multiple paragraphs.
 
 Caution
-=======
+-------
 
 Source:
 
@@ -70,7 +73,7 @@ Result:
    It can have multiple paragraphs.
 
 Danger
-======
+------
 
 Source:
 
@@ -91,7 +94,7 @@ Result:
    It can have multiple paragraphs.
 
 Error
-=====
+-----
 
 Source:
 
@@ -112,7 +115,7 @@ Result:
    It can have multiple paragraphs.
 
 Hint
-====
+----
 
 Source:
 
@@ -133,7 +136,7 @@ Result:
    It can have multiple paragraphs.
 
 Important
-=========
+---------
 
 Source:
 
@@ -154,7 +157,7 @@ Result:
    It can have multiple paragraphs.
 
 Note
-====
+----
 
 Source:
 
@@ -175,7 +178,7 @@ Result:
    It can have multiple paragraphs.
 
 Tip
-===
+---
 
 Source:
 
@@ -196,7 +199,7 @@ Result:
    It can have multiple paragraphs.
 
 Warning
-=======
+-------
 
 Source:
 
@@ -215,4 +218,36 @@ Result:
    This is a Warning admonition.
 
    It can have multiple paragraphs.
+
+Sidebar
+=======
+
+.. sidebar:: Sidebar Title
+
+   Subsequent indented lines comprise
+   the body of the sidebar, and are
+   interpreted as body elements.
+
+Source:
+
+.. code-block:: rst
+
+   .. sidebar:: Sidebar Title
+
+      Subsequent indented lines comprise
+      the body of the sidebar, and are
+      interpreted as body elements.
+
+Result:
+
+Rendered to the right.
+
+Notes:
+
+*  Tip: for better rendering, you may want to code the sidebar just before what it relates to, rather than just after.
+*  The version of Sphinx and Sphinx_rtd_theme we use does not seem to render the ``:subtitle:`` differently.
+
+References:
+
+*  https://docutils.sourceforge.io/docs/ref/rst/directives.html#sidebar
 
