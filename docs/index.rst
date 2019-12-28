@@ -15,6 +15,7 @@ Thib's ReadTheDocs Test Project
    asides
    verbatim
    links
+   images
 
 Indices and tables
 ==================
@@ -22,3 +23,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+

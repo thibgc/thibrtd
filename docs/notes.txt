@@ -1,0 +1,8 @@
+On Arch Linux, to make:
+
+    make latexpdf
+
+work locally, install:
+
+    texlive-core
+    texlive-latexextra

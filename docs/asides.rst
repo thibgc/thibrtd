@@ -9,6 +9,10 @@ Admonitions
 
 Admonitions are side notes offset from the main body of text by a box. Examples include "Warning", "Note" and "Important". The specific admonition directives ``attention``, ``caution``, ``danger``, ``error``, ``hint``, ``important``, ``note``, ``tip``, and ``warning`` are implemented in terms of the generic ``admonition`` directive.
 
+.. admonition:: PDF Output
+
+   In local PDF output, all specific admonitions are rendered in a boxed area, but the generic ``admonition`` is rendered slightly differently with a horizontal line above and below.
+
 Admonition
 ----------
 

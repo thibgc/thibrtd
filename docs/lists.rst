@@ -58,6 +58,7 @@ Notes:
 References:
 
 *  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#bullet-lists
+*  https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks
 
 Enumerated List
 ===============
@@ -97,6 +98,7 @@ Notes:
 References:
 
 *  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#enumerated-lists
+*  https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks
 
 Definition List
 ===============
@@ -130,4 +132,5 @@ Notes:
 References:
 
 *  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#definition-lists
+*  https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#lists-and-quote-like-blocks
 

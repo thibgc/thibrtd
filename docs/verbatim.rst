@@ -89,6 +89,10 @@ Code Block
 
    This directive is part of Sphinx.
 
+.. admonition:: PDF Output
+
+   In HTML output, ``code`` and ``code-block`` look the same, but in PDF output, ``code-block`` is rendered inside a boxed area, with small, ``a2ps``-style line numbers outside the boxed area.
+
 Source:
 
 .. code-block:: rst

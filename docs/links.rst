@@ -4,54 +4,78 @@ Links
 
 .. contents:: :local:
 
-Hyperlinks
-==========
+External Links
+==============
+
+External links can be **bare**, **direct** (```TTT <URL>`_``) or **indirect** (defined by ``.. _TTT: URL`` and referenced by ```TTT`_``).
 
 Source:
 
 .. code-block:: rst
 
-   This is a bare link: http://www.example.com/
+   *  Bare link: http://www.example.com/
 
-   This is a link with `link text <http://www.example.com/linktext>`_.
+   *  Link with direct reference: Link with `direct reference <http://www.example.com/direct>`_.
 
-   Rather than repeatedly linking to the same URL with the same link text, you can define the mapping from the link text to the URL like this:
+   *  Link with indirect reference: Link with `indirect reference`_
 
-   .. _defined link text: http://www.example.com/definedlink
-
-   and make multiple references to it by link text alone: one reference to the `defined link text`_, another reference to the `defined link text`_.
-
-   The same directive without a URL simply names its location in the current document:
-
-   .. _internal link text:
-
-   You can then reference it by the `internal link text`_.
+   .. _indirect reference: http://www.example.com/indirect
 
 Result:
 
-This is a bare link: http://www.example.com/
+*  Bare link: http://www.example.com/
 
-This is a link with `link text <http://www.example.com/linktext>`_.
+*  Link with direct reference (```TTT <URL>`_``): Link with `direct reference <http://www.example.com/direct>`_.
 
-Rather than repeatedly linking to the same URL with the same link text, you can define the mapping from the link text to the URL like this:
+*  Link with indirect reference (``.. _TTT: URL`` and ```TTT`_``): Link with `indirect reference`_
 
-.. _defined link text: http://www.example.com/definedlink
-
-and make multiple references to it by link text alone: one reference to the `defined link text`_, another reference to the `defined link text`_.
-
-The same directive without a URL simply names its location in the current document:
-
-.. _internal link text:
-
-You can then reference it by the `internal link text`_.
+.. _indirect reference: http://www.example.com/indirect
 
 References:
 
 *  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#hyperlink-targets
+*  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#hyperlink-references
 *  https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#hyperlinks
+
+Internal Links
+==============
+
+Section headings are named by preceding them with ``.. LLL:``, and referenced with ``:ref:`LLL``` (note: no trailing underscore).
+
+Source:
+
+.. code-block:: rst
+
+   For more information, see :ref:`fakesection`.
+
+   .. _fakesection:
+
+   Fake Section
+   ------------
+
+   This is a fake section.
+
+Result:
+
+For more information, see :ref:`fakesection`.
+
+.. _fakesection:
+
+Fake Section
+------------
+
+This is a fake section.
+
+References:
+
+*  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#hyperlink-targets
+*  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#inline-internal-targets
+*  https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#ref-role
 
 Footnotes
 =========
+
+Footnotes are defined with ``.. [#LLL]`` and referenced with ``[#LLL]_`` (compare both with the lack of ``#`` in citations).
 
 Source:
 
@@ -82,16 +106,31 @@ This is a reference to a footnote labeled f1 [#f1]_ . This is also a reference t
 References:
 
 *  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#footnotes
+*  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#footnote-references
 *  https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#footnotes
 
 Citations
 =========
 
+LaTeX-style, single-keyword citations are defined with ``.. [LLL]`` and referenced with ``[LLL]_`` (compare both with the ``#`` in footnotes).
+
 Source:
+
+.. code-block:: rst
+
+   LaTeX-style citations are supported [RFC2119]_ .
+
+   .. rubric:: Citations
+
+   .. [RFC2119]
+
+      Body of ``RFC2119`` citation: https://tools.ietf.org/rfc/rfc2119.txt
+
+      If the body fits on one line, can be on the same line as ``..``.
 
 Result:
 
-LaTeX-style single-keyword citations are supported [RFC2119]_ .
+LaTeX-style citations are supported [RFC2119]_ .
 
 .. rubric:: Citations
 
@@ -105,6 +144,8 @@ LaTeX-style single-keyword citations are supported [RFC2119]_ .
 
    Standard reStructuredText citations are per-file, but Sphinx makes citations global.
 
+   In local PDF output, citations are grouped together into a *Bibliography* appendix. In HTML output, citations are rendered wherever they are defined. This makes the toy example above impractical as a single source for both HTML and PDF.
+
    References:
 
    *  https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#citations
@@ -112,5 +153,6 @@ LaTeX-style single-keyword citations are supported [RFC2119]_ .
 References:
 
 *  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#citations
+*  https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#citation-references
 *  https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#citations
 
