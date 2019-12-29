@@ -147,17 +147,62 @@ Semantic Markup
 
    These roles are part of Sphinx.
 
+Source:
+
+.. code-block:: rst
+
+   *  ``:command:`` for an named executable: Use :command:`rsync` or :command:`scp` .
+
+   *  ``:envvar:`` for an environment variable: Set :envvar:`JAVA_HOME` .
+
+   *  ``:file:`` for a path, with variable portions in curly braces: Edit :file:`/home/{user}/.myconf` .
+
+      *  Use curly braces for a variable portion: Installed in :file:`/usr/lib/python2.{x}/site-packages` .
+
+   *  ``:guilabel:`` for a GUI label, with an ampersand preceding an accelerator key (use double ampersand for a literal ampersand): Click :guilabel:`Cancel` .
+
+   *  ``:kbd:`` for a keystroke sequence: Hit :kbd:`Ctrl+C` .
+
+   *  ``:menuselection:`` for a menu sequence, separated by ``-->``: Select :menuselection:`Edit --> Copy`
+
+   *  ``:mimetype:`` for a MIME type or portion thereof: The :mimetype:`text/plain` MIME type.
+
+   *  ``:program:`` for a typed executable: Type :program:`exit` to log out.
+
+   *  ``:regexp:`` for a regular expression: Use :regexp:`^([^#]*)#?` to ignore comments.
+
+   *  ``:samp:`` for literal text, with variable parts in curly braces (use backslash to escape literal curly braces): Type :samp:`sleep {secs}` .
+
 Result:
 
-*  ``:command:`` for an OS command: Type :command:`rm`
+*  ``:command:`` for an named executable: Use :command:`rsync` or :command:`scp` .
 
-*  ``:file:`` for a path: Edit :file:`/etc/resolv.conf` .
+*  ``:envvar:`` for an environment variable: Set :envvar:`JAVA_HOME` .
+
+*  ``:file:`` for a path, with variable portions in curly braces: Edit :file:`/home/{user}/.myconf` .
 
    *  Use curly braces for a variable portion: Installed in :file:`/usr/lib/python2.{x}/site-packages` .
 
-*  ``:guilabel:`` for a GUI label: Click :guilabel:`OK` .
+*  ``:guilabel:`` for a GUI label, with an ampersand preceding an accelerator key (use double ampersand for a literal ampersand): Click :guilabel:`Cancel` .
 
-   *  Precede a letter accelerator with an ampersand: Click :guilabel:`&Cancel` .
+*  ``:kbd:`` for a keystroke sequence: Hit :kbd:`Ctrl+C` .
 
-   *  Use a double ampersand for a literal ampersand: Click :guilabel:`Save && Restart` .
+*  ``:menuselection:`` for a menu sequence, separated by ``-->``: Select :menuselection:`Edit --> Copy`
+
+*  ``:mimetype:`` for a MIME type or portion thereof: The :mimetype:`text/plain` MIME type.
+
+*  ``:program:`` for a typed executable: Type :program:`exit` to log out.
+
+*  ``:regexp:`` for a regular expression: Use :regexp:`^([^#]*)#?` to ignore comments.
+
+*  ``:samp:`` for literal text, with variable parts in curly braces (use backslash to escape literal curly braces): Type :samp:`sleep {secs}` .
+
+Notes:
+
+*  ``:guilabel:`` seems to have bugs. In HTML output, the accelerator key surrounds the affected character with a distinguishable ``<span>`` but seemingly not resulting in a different visual. In PDF output, the double ampersand remains without being escaped to a single ampersand.
+
+References:
+
+*  http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#cross-referencing-other-items-of-interest
+*  http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#other-semantic-markup
 
