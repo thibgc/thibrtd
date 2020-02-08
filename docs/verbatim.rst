@@ -4,8 +4,9 @@ Verbatim
 
 .. contents:: :local:
 
+----
 Code
-====
+----
 
 .. tip::
 
@@ -82,8 +83,9 @@ References:
 *  https://docutils.sourceforge.io/docs/ref/rst/directives.html#code
 *  https://pygments.org/docs/lexers/
 
+----------
 Code Block
-==========
+----------
 
 .. note::
 
@@ -222,8 +224,9 @@ References:
 *  https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block
 *  https://pygments.org/docs/lexers/
 
+---------------
 Literal Include
-===============
+---------------
 
 .. note::
 
@@ -249,4 +252,3 @@ References:
 
 *  https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html
 *  https://pygments.org/docs/lexers/
-

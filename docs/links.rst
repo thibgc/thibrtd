@@ -7,7 +7,13 @@ Links
 External Links
 ==============
 
-External links can be **bare**, **direct** (```TTT <URL>`_``) or **indirect** (defined by ``.. _TTT: URL`` and referenced by ```TTT`_``).
+External links can be:
+
+*  **bare** (URL in the body)
+
+*  **direct** (```LABEL <URL>`_``)
+
+*  **indirect** (defined by ``.. _LABEL: URL`` , referenced by ```LABEL`_``).
 
 Source:
 
@@ -15,9 +21,9 @@ Source:
 
    *  Bare link: http://www.example.com/
 
-   *  Link with direct reference: Link with `direct reference <http://www.example.com/direct>`_.
+   *  Link with direct reference: This is a `direct reference <http://www.example.com/direct>`_.
 
-   *  Link with indirect reference: Link with `indirect reference`_
+   *  Link with indirect reference: This is an `indirect reference`_
 
    .. _indirect reference: http://www.example.com/indirect
 
@@ -25,9 +31,9 @@ Result:
 
 *  Bare link: http://www.example.com/
 
-*  Link with direct reference (```TTT <URL>`_``): Link with `direct reference <http://www.example.com/direct>`_.
+*  Link with direct reference: This is a `direct reference <http://www.example.com/direct>`_.
 
-*  Link with indirect reference (``.. _TTT: URL`` and ```TTT`_``): Link with `indirect reference`_
+*  Link with indirect reference: This is an `indirect reference`_
 
 .. _indirect reference: http://www.example.com/indirect
 

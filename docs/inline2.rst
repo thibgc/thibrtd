@@ -77,6 +77,30 @@ References:
 *  http://docutils.sourceforge.net/docs/ref/rst/roles.html#subscript
 
 ---------------
+Title Reference
+---------------
+
+Used for the title of a book, periodical, etc.
+
+Preferred: ``:title-reference:`...```
+
+Synonyms: ``:title:`...```, ``:t:`...```
+
+Source:
+
+.. code-block:: rst
+
+   :title-reference:`Design Patterns` is a great book.
+
+Result:
+
+:title-reference:`Design Patterns` is a great book.
+
+References:
+
+*  http://docutils.sourceforge.net/docs/ref/rst/roles.html#title-reference
+
+---------------
 Semantic Markup
 ---------------
 
@@ -124,7 +148,7 @@ Sphinx defines a number of roles for semantic markup.
 
    Sequence of keystrokes.
 
-   ``kbd`Control + Alt + Delete``` -> kbd`Control + Alt + Delete`
+   ``:kbd:`Control + Alt + Delete``` -> :kbd:`Control + Alt + Delete`
 
 ``:mailheader:`...```
 
@@ -138,7 +162,7 @@ Sphinx defines a number of roles for semantic markup.
 
    ``:manpage:`ls(1)``` -> :manpage:`ls(1)`
 
-:menuselection:
+``:menuselection:``
 
    A menu selection sequence, separated by ``-->``.
 

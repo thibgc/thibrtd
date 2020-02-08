@@ -4,8 +4,9 @@ Asides
 
 .. contents:: :local:
 
+-----------
 Admonitions
-===========
+-----------
 
 Admonitions are side notes offset from the main body of text by a box. Examples include "Warning", "Note" and "Important". The specific admonition directives ``attention``, ``caution``, ``danger``, ``error``, ``hint``, ``important``, ``note``, ``tip``, and ``warning`` are implemented in terms of the generic ``admonition`` directive.
 
@@ -14,7 +15,7 @@ Admonitions are side notes offset from the main body of text by a box. Examples 
    In local PDF output, all specific admonitions are rendered in a boxed area, but the generic ``admonition`` is rendered slightly differently with a horizontal line above and below.
 
 Admonition
-----------
+==========
 
 Source:
 
@@ -35,7 +36,7 @@ Result:
    It can have multiple paragraphs.
 
 Attention
----------
+=========
 
 Source:
 
@@ -56,7 +57,7 @@ Result:
    It can have multiple paragraphs.
 
 Caution
--------
+=======
 
 Source:
 
@@ -77,7 +78,7 @@ Result:
    It can have multiple paragraphs.
 
 Danger
-------
+======
 
 Source:
 
@@ -98,7 +99,7 @@ Result:
    It can have multiple paragraphs.
 
 Error
------
+=====
 
 Source:
 
@@ -119,7 +120,7 @@ Result:
    It can have multiple paragraphs.
 
 Hint
-----
+====
 
 Source:
 
@@ -140,7 +141,7 @@ Result:
    It can have multiple paragraphs.
 
 Important
----------
+=========
 
 Source:
 
@@ -161,7 +162,7 @@ Result:
    It can have multiple paragraphs.
 
 Note
-----
+====
 
 Source:
 
@@ -182,7 +183,7 @@ Result:
    It can have multiple paragraphs.
 
 Tip
----
+===
 
 Source:
 
@@ -203,7 +204,7 @@ Result:
    It can have multiple paragraphs.
 
 Warning
--------
+=======
 
 Source:
 
@@ -223,8 +224,9 @@ Result:
 
    It can have multiple paragraphs.
 
+-------
 Sidebar
-=======
+-------
 
 .. sidebar:: Sidebar Title
 
@@ -244,7 +246,9 @@ Source:
 
 Result:
 
-Rendered to the right.
+*  In HTML: rendered to the right.
+
+*  In PDF: rendered as a full-width box.
 
 Notes:
 
@@ -255,3 +259,36 @@ References:
 
 *  https://docutils.sourceforge.io/docs/ref/rst/directives.html#sidebar
 
+-----
+Topic
+-----
+
+Source:
+
+.. code-block:: rst
+
+   .. topic:: Topic Title
+
+      Subsequent indented lines comprise
+      the body of the topic, and are
+      interpreted as body elements.
+
+Result:
+
+.. topic:: Topic Title
+
+   Subsequent indented lines comprise
+   the body of the topic, and are
+   interpreted as body elements.
+
+Notes:
+
+Result:
+
+*  In HTML: not rendered all that specially.
+
+*  In PDF: rendered as a full-width box.
+
+References:
+
+*  http://docutils.sourceforge.net/docs/ref/rst/directives.html#topic
