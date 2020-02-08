@@ -11,6 +11,7 @@ Thib's ReadTheDocs Test Project
    :caption: Contents:
 
    inline
+   inline2
    lists
    asides
    verbatim
