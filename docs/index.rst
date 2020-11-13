@@ -18,11 +18,6 @@ Thib's ReadTheDocs Test Project
    links
    images
 
-ThibRTD1
---------
+   thibrtd:index
+   thibrtd1:index
 
-.. toctree::
-   :maxdepth: 2
-   :caption: ThibRTD1
-
-   projects/thibrtd1/index

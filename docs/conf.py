@@ -32,8 +32,14 @@ author = 'Thib Guicherd-Callin'
 # ones.
 extensions = [
     # See https://github.com/readthedocs/sphinx_rtd_theme
-    'sphinx_rtd_theme'
+    'sphinx_rtd_theme',
+    'sphinx.ext.intersphinx'
 ]
+
+intersphinx_mapping = {
+    'thibrtd': ('https://thibrtd.readthedocs.io/en/latest/', None),
+    'thibrtd1': ('https://thibrtd.readthedocs.io/projects/thibrtd1/en/latest/', None)
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
