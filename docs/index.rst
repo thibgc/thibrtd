@@ -9,6 +9,7 @@ Thib's ReadTheDocs Test Project
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :hidden:
 
    inline
    inline2
@@ -18,6 +19,10 @@ Thib's ReadTheDocs Test Project
    links
    images
 
-   thibrtd:index
-   thibrtd1:index
+.. toctree::
+   :maxdepth: 2
+   :caption: All Projects:
+   :hidden:
 
+   ThibRTD <https://thibrtd.readthedocs.io/en/latest/>
+   ThibRTD1 <https://thibrtd.readthedocs.io/projects/thibrtd1/en/latest/>
