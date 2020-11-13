@@ -18,10 +18,8 @@ Thib's ReadTheDocs Test Project
    links
    images
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
+   :caption: ThibRTD1
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   projects/thibrtd1
