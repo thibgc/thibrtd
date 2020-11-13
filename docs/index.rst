@@ -22,4 +22,4 @@ Thib's ReadTheDocs Test Project
    :maxdepth: 2
    :caption: ThibRTD1
 
-   projects/thibrtd1
+   projects/thibrtd1/index
