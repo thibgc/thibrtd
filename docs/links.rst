@@ -46,7 +46,7 @@ References:
 Internal Links
 ==============
 
-Section headings are named by preceding them with ``.. LLL:``, and referenced with ``:ref:`LLL``` (note: no trailing underscore).
+Section headings are named by preceding them with ``.. _LLL:`` (note the underscore), and referenced with ``:ref:`LLL``` (note the absence of leading or trailing underscore).
 
 Source:
 

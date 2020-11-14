@@ -194,7 +194,7 @@ Sphinx defines a number of roles for semantic markup.
 
    Within the contents, you can use curly braces to indicate a variable part, as in ``:file:``. Curly braces are escaped with a backslash.
 
-   ``:samp:`print {variable} + 1``` -> ``:samp:`print {variable} + 1`
+   ``:samp:`print {variable} + 1``` -> ``:samp:`print {variable} + 1```
 
 Notes:
 
