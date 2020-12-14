@@ -9,7 +9,6 @@ Thib's ReadTheDocs Test Project
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   :hidden:
 
    inline
    inline2
